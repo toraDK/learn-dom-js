@@ -34,11 +34,19 @@ const p3 = document.querySelector('.p3');
 //     p3.style.color = 'red';
 // }
 
-//jika melakukan perubahan dua kali atau lebih di fungsi yang berbeda menggunakan addEventListener maka semua perubahan akan terlihat semua oleh user
-p3.addEventListener('click', function () {
+// //jika melakukan perubahan dua kali atau lebih di fungsi yang berbeda menggunakan addEventListener maka semua perubahan akan terlihat semua oleh user
+// p3.addEventListener('click', function () {
+//     p3.style.backgroundColor = 'lightblue';
+// });
+
+// p3.addEventListener('click', function () {
+//     p3.style.color = 'red';
+// });
+
+p3.addEventListener('mouseenter', function () {
     p3.style.backgroundColor = 'lightblue';
 });
 
-p3.addEventListener('click', function () {
-    p3.style.color = 'red';
+p3.addEventListener('mouseleave', function () {
+    p3.style.backgroundColor = 'white';
 });
