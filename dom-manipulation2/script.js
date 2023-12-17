@@ -1,10 +1,12 @@
 // DOM Manipulation
 // buat elemen baru
 
+//buat paragrafnya atau bisa diartikan sebagai vasnya
 const pBaru = document.createElement('p');
+//buat teks barunya atau bisa diartikan sebagai bunganya
 const teksPBaru = document.createTextNode('Paragraf Baru');
 
-//simpan tulisan kedalam paragraf
+//simpan teks barunya kedalam paragraf atau bisa diartikan taru bunganya ke dalam vas
 pBaru.appendChild(teksPBaru);
 
 //simpan pBaru di akhir Section A
