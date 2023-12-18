@@ -18,3 +18,11 @@ tAcakWarna.addEventListener('click', function () {
     const b = Math.round(Math.random() * 255 + 1);
     document.body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
 });
+
+
+const sMerah = document.querySelector('input[name="sMerah"]');
+
+
+sMerah.addEventListener('change', function () {
+    alert('ok')
+})
