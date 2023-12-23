@@ -8,8 +8,22 @@
 //DOM TRAVESAL
 const close = document.querySelectorAll('.close');
 
-for(let i = 0; i < close.length; i++){
-    close[i].addEventListener('click', function () {
-        close[i].parentElement.style.display = 'none';
+// for(let i = 0; i < close.length; i++){
+//     close[i].addEventListener('click', function (e) {
+//         // close[i].parentElement.style.display = 'none';
+//         // console.log(e);
+//         // console.log(e.target);
+//         e.target.parentElement.style.display = 'none';
+//     });
+// }
+
+close.forEach(function(a) {
+    a.addEventListener('click', function (e) {
+        e.target.parentElement.style.display = 'none';
     });
-}
+});
+
+
+
+const nama = document.querySelector('.nama');
+console.log(nama.nextElementSibling);
