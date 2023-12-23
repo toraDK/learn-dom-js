@@ -6,7 +6,7 @@
 
 
 //DOM TRAVESAL
-const close = document.querySelectorAll('.close');
+// const close = document.querySelectorAll('.close');
 
 // for(let i = 0; i < close.length; i++){
 //     close[i].addEventListener('click', function (e) {
@@ -17,23 +17,35 @@ const close = document.querySelectorAll('.close');
 //     });
 // }
 
-close.forEach(function(a) {
-    a.addEventListener('click', function (e) {
-        e.target.parentElement.style.display = 'none';
-        e.preventDefault();
-        e.stopPropagation();
-    });
-});
+// close.forEach(function(a) {
+//     a.addEventListener('click', function (e) {
+//         e.target.parentElement.style.display = 'none';
+//         e.preventDefault();
+//         e.stopPropagation();
+//     });
+// });
 
 
 
-const cards = document.querySelectorAll('.card');
-cards.forEach(function (card) {
-    card.addEventListener('click', function(){
-        alert('ok');
-    });
-});
+// const cards = document.querySelectorAll('.card');
+// cards.forEach(function (card) {
+//     card.addEventListener('click', function(){
+//         alert('ok');
+//     });
+// });
 
 
 // const nama = document.querySelector('.nama');
 // console.log(nama.nextElementSibling);
+
+
+
+
+const container = document.querySelector('.container');
+
+container.addEventListener('click', function (e) {
+    if(e.target.className == 'close'){
+        e.target.parentElement.style.display = 'none';
+        e.preventDefault();
+    }
+});
