@@ -17,8 +17,13 @@ body{
 }
 
 .thumb{
-    width: 426.6 px;
+    width: 426.6px;
     float: left;
     border: 2px solid white;
     box-sizing: border-box;
+}
+
+.thumb:hover{
+    opacity: 0.5;
+    cursor: pointer;
 }
