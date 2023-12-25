@@ -1,5 +1,6 @@
 const container = document.querySelector('.container');
 const jumbo = document.querySelector('.jumbo');
+const thumbs = document.querySelectorAll('.thumb');
 
 container.addEventListener('click', function (e) {
     if(e.target.className == 'thumb'){
@@ -8,5 +9,14 @@ container.addEventListener('click', function (e) {
         setTimeout(function() {
             jumbo.classList.remove('fade')
         }, 500);
+
+        thumbs.forEach(function name(thumb) {
+            // if(thumb.classList.contains('active')){
+            //     thumb.classList.remove('active');
+            // }
+            thumb.className = 'thumb';
+        });
+
+        e.target.classList.add('active');
     }
 });
